@@ -20,7 +20,7 @@ mmRTLS is an integral approach of Real Time Indoor Location System based on Wire
 - (CS) still makes trilateration calculations for one scenario
 
 **What is different?**
-1. (B) Beacons that transmit the RSSI packet can have multiple coexiting modes:
+1. (B) Beacons that transmit the RSSI packet can have multiple coexisting modes:
 - Passive: The RSSI is sent without control of the system by a non SW controlled Access Point (AP)
 - Induced Passive: The RSSID is sent by an Access Point that will be triggered externally to send data O(e.g. Ping)
 - Active: The RSSID is sent by a controlled Beacon synchronized by NTP
@@ -28,7 +28,7 @@ mmRTLS is an integral approach of Real Time Indoor Location System based on Wire
 2. (ND) Navigation Devices that measures the RSSI:
 - Can use different networks for trilaterate or transmit the RSSI
 - Can locally calculate relative positioning as an option
-- Can merge giroscope and accelerator information for increased precision
+- Can merge gyroscope and accelerator information for increased precision
 
 3. (CS) Control Server:
 - Can have their own fast NTPS for increased precision
