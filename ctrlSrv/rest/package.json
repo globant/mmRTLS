@@ -12,7 +12,7 @@
     "node": ">=10.16"
   },
   "scripts": {
-    "prepare": "git config --local core.hooksPath .githooks/",
+    "prepare": "",
     "build": "lb-tsc",
     "build:watch": "lb-tsc --watch",
     "lint": "yarn run eslint && yarn run prettier:check",
