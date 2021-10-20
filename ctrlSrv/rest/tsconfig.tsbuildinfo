@@ -1717,38 +1717,38 @@
         "affectsGlobalScope": true
       },
       "./src/types.ts": {
-        "version": "ab19427ce72f2ab0178c4fd2e4e47d33371042cc59837e6a8dc3c632d396f85b",
-        "signature": "356ffa775b9b5ffc5621a4371191e50c309b262e9d941eff5c7d18e309ecc078",
+        "version": "ce6c3ee4f363dd04df057812dd6a115d7abe6c0521b0744f652cb29faf607cff",
+        "signature": "5ca8e871b54b9acd1139ee57fc30103a4346ef86f8c748fdbdca5156faadb5f1",
         "affectsGlobalScope": false
       },
       "./src/keys.ts": {
-        "version": "7ae8bc0d9313474387cd8e6ff5fc21f7430a26af0a9c207c9e6d1057b33c7de8",
-        "signature": "634bdfcd75648ea13a17796f39df5b294c93640bbd334581b732ed374d26428a",
+        "version": "fb079b5784fa712f4446c3db3af7a56bed1f0dc1f1331069a440a2ca32a53e44",
+        "signature": "f6f9c0374b4505cc7488a3f98b4b74b096c321c973564ed7509ab3a093972e1c",
         "affectsGlobalScope": false
       },
       "./src/sequence.ts": {
         "version": "12e8af986d85cdf521b2aecda816a9f8c6707e47c7e722cb545a42e20555076b",
-        "signature": "92ce26be36f17f312491d49afe2a3c0b425dc1bc7cced81a7032eccdad10242a",
+        "signature": "4399c2b2ec8004633d4c5a6aca0d491f461af2631ba9157ea54a6b7b2993d0a6",
         "affectsGlobalScope": false
       },
       "./src/application.ts": {
-        "version": "9ec32f479ceddddec7bf14194dbc594e08891739d00a4293353593b55aa127ea",
-        "signature": "30692f5b00dc51b4d03e62aa245ee62c20aa8f701caa79622198d051406c98b5",
+        "version": "78ab73517f085a46c87776155e7fcfddde1e39d822c05e28df93502ffe969ddd",
+        "signature": "6e5abc0f1c5ca1cd9e48e730e650f0857d6e576a6fa1292def11aa114a65c555",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
         "version": "1cde005da1ee4fb06cc7fa8ab67eca0e8e46babd41d004008a368f4a5f31d7b6",
-        "signature": "4c10c38c4b6a50e506121e40586d659c31d48d428c4edbb0387637b8efabb782",
+        "signature": "cf4a9b6c8492dfa5f576692195932b1c170e6fdabccf21dcd9bd097335c5c689",
         "affectsGlobalScope": false
       },
       "./src/migrate.ts": {
         "version": "96c32293bbea0011e1cd783b0e2b6457c0d4ec3dbe8d7650861cff59deb7f9c6",
-        "signature": "e9b8dbbcc0cb738d2836845996cec05b75916fe8314d6d515028b0cab71df9c9",
+        "signature": "d289609b56df6411204c89f5197dc2d4d19910336a10c86cd9b3af21b22e344d",
         "affectsGlobalScope": false
       },
       "./src/openapi-spec.ts": {
         "version": "0d34a622c81ae2c33f1e4c56aa361b35c713db9f9d88e58ca33aa0b316a91610",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/cookiejar/index.d.ts": {
@@ -1806,11 +1806,6 @@
         "signature": "c35b3b6ef644c4144c767d0ef2573b32b79cd989d84e266a73f0c8966dc0ef97",
         "affectsGlobalScope": false
       },
-      "./node_modules/@types/sinon/node_modules/@sinonjs/fake-timers/types/fake-timers-src.d.ts": {
-        "version": "b79a450a5233f10fa43da81c35a17f8eec71fea394d0ff91620819e0af513fe9",
-        "signature": "b79a450a5233f10fa43da81c35a17f8eec71fea394d0ff91620819e0af513fe9",
-        "affectsGlobalScope": false
-      },
       "./node_modules/@types/sinon/index.d.ts": {
         "version": "fc8a86547dc1da127bad3a5c71137b9e8bb9de3c91df12869dd52e3ff2346e61",
         "signature": "fc8a86547dc1da127bad3a5c71137b9e8bb9de3c91df12869dd52e3ff2346e61",
@@ -1848,107 +1843,122 @@
       },
       "./src/__tests__/acceptance/test-helper.ts": {
         "version": "ed4b3c9255f136aec8badd2a7270425d0c68cc74f0fda6e548b4e698f622e3ec",
-        "signature": "4889c1582381e1c743f0041bb9ec2e01b46b7463b82c8b22a3426a82ac3b8c89",
+        "signature": "9f5c54a301ca20b48ab490ab51920f05bc34bd050c9af6ca2bcb612837b47696",
         "affectsGlobalScope": false
       },
       "./src/__tests__/acceptance/home-page.acceptance.ts": {
         "version": "6a1ca9f29f3fb12fabdf00d851358ded890bd3b36a52c4ef57ca6450f2cc2d6b",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
       "./src/__tests__/acceptance/ping.controller.acceptance.ts": {
         "version": "55ffd59cb62aaa9cc944e450a00fa4e48face6363e60db330ceeb7641437c89d",
-        "signature": "f761c91419d0a89422a0004ef1a92929dd4d2d5e5c16758654d8b0467d1998c6",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
       "./src/models/position.model.ts": {
-        "version": "af03954fdc3eeaa4e324c39991ebb719819ea894e8cb911cbec09ade26ddf468",
-        "signature": "976a1f90e1f81b18b2f5df980e80c5ef3735abb429dd877d2a4dcd46453e39e6",
+        "version": "a052327ee6969dae63c751b0ced7f6abd9ef182ca2971722870d6eb87012191c",
+        "signature": "6dfc75fee250bb4219445bcd9088f62cda1c3503b1aac3b03727fdda4d48469f",
         "affectsGlobalScope": false
       },
       "./src/models/nav-dev.model.ts": {
-        "version": "adc934ec950fde2d692d9014cdd4c938797aafdc6e8febdfaf6a45efbce01dd1",
-        "signature": "df06064ec6f8b4c371b702d466840c7a1096864be4e15071666dfc06f128b2a5",
+        "version": "a1734ae46597c3b4426d95a7457dbb8c226e547a9cc044a28a602a77458489ce",
+        "signature": "973eeb777a1c4a84ac2d9a24519baf3c30a93a9616373f118b15631d7d9c1eac",
         "affectsGlobalScope": false
       },
       "./src/models/beacon.model.ts": {
-        "version": "e82d9e5511b7cb1fc9fa4890f1cfca634f8bff296c423eaefbf037422b38d274",
-        "signature": "af32cec1ca285e94e48caab6036ed430d335686afa9058d6ebf321e238148369",
+        "version": "c0446cb80df51fecdc64656ffb7ce1d51bc93cdbf11cff38ebc898cb937caa3e",
+        "signature": "b7bb1db92ea588a7945225ab136bce8dc5903250800297b0f8a7f2b2c4828957",
+        "affectsGlobalScope": false
+      },
+      "./src/models/map.model.ts": {
+        "version": "c3c680b62e68f10e4bb077a4779e86dcd52c2aebd0e24f6d9afb5a2acdfb5ba1",
+        "signature": "53c0b10de1471f121488ec7187302307bd126bb73b245240ef395c4c1b009938",
         "affectsGlobalScope": false
       },
       "./src/models/index.ts": {
-        "version": "4bace6cfad51f68f9e856be474e9e51bf50c56cddd141eb4e8a1be8343cd12cd",
-        "signature": "ed1c23fa83b1a10ed43a97657d9b5312e6971f53e34de60c56e523c22c55097f",
+        "version": "c87924302e077a794d1fd1cb460110716ba9c36f644df6be9af7325162b7412e",
+        "signature": "c87924302e077a794d1fd1cb460110716ba9c36f644df6be9af7325162b7412e",
         "affectsGlobalScope": false
       },
       "./src/datasources/db.datasource.ts": {
-        "version": "8b2fb197deabd28e9561fffe0e7198870c6be2ce7e74a4947daee7e619e39765",
-        "signature": "8032613858f2121f0acd8d68a6c89839dc32733f1b83fd74f9f0cdc04057ba34",
+        "version": "e0dcb3e06269e890f5ef81989fb754fb4646831abb1902a9cb5572ef3e2f0d9f",
+        "signature": "a0d8e7a175191c5a6623976c04c11c485720923b3418f5949742001bd92ca80e",
         "affectsGlobalScope": false
       },
       "./src/datasources/index.ts": {
         "version": "834b70c56280af742429c81a7c992c940426144605c9604c22ffd68a9c327619",
-        "signature": "537dd21cdb932491bca04b418b9582009f52a8a6b403a48d224cf3f2d0df545a",
+        "signature": "834b70c56280af742429c81a7c992c940426144605c9604c22ffd68a9c327619",
         "affectsGlobalScope": false
       },
       "./src/repositories/position.repository.ts": {
-        "version": "b5b63086350b8575b57250ab8e2a10bc68a6d3fbbe6a8f69224bc002d16cb150",
-        "signature": "45cdf17d0d015651c288eb9cf2c0740a23b769bf51b17fa65d35156b9dada181",
+        "version": "51f61af731451647f97b7760b1abcaff1b084101bbe5aee49b35cc4ec8c88e2b",
+        "signature": "e110244f414f260d8ecf41fb11be82c30ece4a88afbc14f5043f64431a743f71",
         "affectsGlobalScope": false
       },
       "./src/repositories/nav-dev.repository.ts": {
-        "version": "b6c4531fbbd86aa88e2323a2c9df820c8db1166c332fe303d8c630b745cada85",
-        "signature": "7b8f9abde2a63e830c493150d995ece95ff64bfeae3890eeae06a10061b1aeaf",
+        "version": "62f0dd572e169e921f2f2d1959d3f339743251746ae47d65809c2c4a466f92ba",
+        "signature": "ee480111ebe1ddcbb371e5fbc769d966e6d112236b1237e39c4de6cf5bd26e08",
         "affectsGlobalScope": false
       },
       "./src/repositories/beacon.repository.ts": {
-        "version": "55c6dcb71d7b4ff14508b4e279034bbab0e4d12569309c86d4b3f7365a842ca3",
-        "signature": "8cd7cefc0645afacaea411b15d39b75190ed870ed365f6561a7bc2e6e91262fe",
+        "version": "b45323f4d8b255a7967e827239caa1f96f6dc2d2262de1e92bef0cc105cb70b5",
+        "signature": "26eb6c08caaf80a1ec91f90cda975e4b0ee843185fad803c5da62d2d33252b54",
+        "affectsGlobalScope": false
+      },
+      "./src/repositories/map.repository.ts": {
+        "version": "81c82195bba9133ef57b79920fffbb7602493a6d7867dad7406a1e01b6e56410",
+        "signature": "f6f95ecb58b3495ee4dad1be40422428895092ef06a8fdef88800367a786f0de",
         "affectsGlobalScope": false
       },
       "./src/repositories/index.ts": {
-        "version": "29bd17da3f9e3007b22e5255f25f3a62b486165c4d053f1275d21bf7d9ba31ad",
-        "signature": "2438bbe3bf98f52f13bb1a051c5ab2f758b31bd81de6ed41e897863f81c68e1a",
+        "version": "1c11b6e6196e3ec17349d21b30e834401f48de786a9103f6265ec4c7594a2cfa",
+        "signature": "1c11b6e6196e3ec17349d21b30e834401f48de786a9103f6265ec4c7594a2cfa",
         "affectsGlobalScope": false
       },
       "./src/controllers/beacon.controller.ts": {
-        "version": "e81285c9ddd9336d919bdc2e5d99e4e779a0736e12bb20ad69c602be9d6580a7",
-        "signature": "48545d99855550ad6708189f974bc006cc8d960c138715bc30756f062dd3eb7b",
+        "version": "f19081f5081ef6b219e70135a542ea24a8b60795db7698d4fd1249ce886fe2c3",
+        "signature": "a3e4432204d1b619013e3cebee08e8b797635318b90d259551dfd152c4918b26",
         "affectsGlobalScope": false
       },
       "./src/controllers/file-download.controller.ts": {
-        "version": "58abcc83d53283971078b2a51a775ea2a5c6eade152d45965ae0663d859ca090",
-        "signature": "23030e3f5cf46d7c337549ff0fa9250fc1a8bdd74cc23f989a4b7820f7cd419a",
+        "version": "5679a1d014729bfcedb9b14db274c1567f26e3d64300afb9973c264566de7f49",
+        "signature": "ff0fefa8abec1d692b05b584994746c954a468d0417b066438491c367bd00534",
         "affectsGlobalScope": false
       },
       "./src/controllers/file-upload.controller.ts": {
-        "version": "6cbfa453e0d023853b3c4f2fd60f8eed999edec153e0a944a6454f9b844e7c38",
-        "signature": "d02caa91da091fc8f2bfa90368c8f711c3f1fb612209f6fc61ad17768b7cb3aa",
+        "version": "40f2184b492cb5cea09d6cae67870480e60fe7f3e4e18d657262f992e0ee6fa8",
+        "signature": "ea6e7f201bee1b916e77e37652b75c74aba1819f4c713a6011d430d2cb467b8b",
         "affectsGlobalScope": false
       },
       "./src/controllers/nav-dev.controller.ts": {
-        "version": "cac71b9f02967ef5444548975b8282cf8d46827ab3dbc38f2decd89ed87676d3",
-        "signature": "102338d1df9340893c603c9f5d247807490a74a2df943180030d413ca95daaa5",
+        "version": "9743387cc946dcc8063a65fc2ca4268ace7fb2f0fa8987f33c7cd4157cf771d8",
+        "signature": "1607939a1380c4600febd69d1c68d77ea5e0faca74335ad3e9924a5b078f6a93",
         "affectsGlobalScope": false
       },
       "./src/controllers/position.controller.ts": {
-        "version": "79fa4f5d66b95f860535feebdbdd8bcc966f37c37ad25278229964396ce592b1",
-        "signature": "f08c29c6d2349ee56b0e77d56a43ce84662f2e02f360aaab3eb18ef4160b6aa6",
+        "version": "38b5c095d4852a90679bc659501494031ea0757885466ad27bf4bb709ac556a2",
+        "signature": "7093731a094a1375032391910b4a711a1c9810999a739a080598fd558bdf9776",
         "affectsGlobalScope": false
       },
       "./src/controllers/nav-dev-position.controller.ts": {
-        "version": "8d01591eae83fe30e3f6fb5b2ab728b0d2babb04ea6b29483f80b5015c0b3735",
-        "signature": "3c3ef94046e2e06db799a632473e8944c278de3b4ae403ec668d3b6c19447b85",
+        "version": "76ce73aa2602a6583cafb62464c7491280b1ce1fd5de4e0991e4bfb040463e7e",
+        "signature": "082f626b86413484a7e33c3ced124cda98ab5abfe129e16449e30b800a76ffbb",
+        "affectsGlobalScope": false
+      },
+      "./src/controllers/map.controller.ts": {
+        "version": "51703a298d490002a4ff33c5b74db08114bec2b529918f2bf81df5503cb66c14",
+        "signature": "3cf1734adf8ba9d36b941360e89e7565bcd0a3f5042b3d352aa4a60680c862a1",
         "affectsGlobalScope": false
       },
       "./src/controllers/index.ts": {
-        "version": "2ba297a436a04fe7256116ea463d82e91f755314fc78713947fa43bca622a819",
-        "signature": "2ba297a436a04fe7256116ea463d82e91f755314fc78713947fa43bca622a819",
+        "version": "77682f5adf51ed99631727d29ebdf10cec9678ea40376b17c8f829f47706ad37",
+        "signature": "77682f5adf51ed99631727d29ebdf10cec9678ea40376b17c8f829f47706ad37",
         "affectsGlobalScope": false
       },
       "./src/services/file-upload.service.ts": {
-        "version": "5e1bb8003a6726de3a368ed40c68f2b67976bcd2741389746d3158427b1f2443",
-        "signature": "f10696220697bcc42ab6ae50590361163de32c6e7cb8e746c892c70eac225318",
+        "version": "af48d12b5d5188de049048e488719b93d55fa9f72a6f826df9760184344dbd8c",
+        "signature": "3ce00ab7892714490c86d138d559c1f2a04b74bd75def2eb84333738602ec47d",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/fs-extra/index.d.ts": {
@@ -3410,9 +3420,6 @@
         "./node_modules/@types/node/index.d.ts",
         "./node_modules/@types/node/stream.d.ts"
       ],
-      "./node_modules/@types/sinon/index.d.ts": [
-        "./node_modules/@types/sinon/node_modules/@sinonjs/fake-timers/types/fake-timers-src.d.ts"
-      ],
       "./node_modules/@types/superagent/index.d.ts": [
         "./node_modules/@types/cookiejar/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
@@ -3582,9 +3589,17 @@
         "./src/controllers/beacon.controller.ts",
         "./src/controllers/file-download.controller.ts",
         "./src/controllers/file-upload.controller.ts",
+        "./src/controllers/map.controller.ts",
         "./src/controllers/nav-dev-position.controller.ts",
         "./src/controllers/nav-dev.controller.ts",
         "./src/controllers/position.controller.ts"
+      ],
+      "./src/controllers/map.controller.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/tslib/tslib.d.ts",
+        "./src/models/index.ts",
+        "./src/repositories/index.ts"
       ],
       "./src/controllers/nav-dev-position.controller.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts",
@@ -3636,8 +3651,13 @@
       "./src/models/index.ts": [
         "./node_modules/tslib/tslib.d.ts",
         "./src/models/beacon.model.ts",
+        "./src/models/map.model.ts",
         "./src/models/nav-dev.model.ts",
         "./src/models/position.model.ts"
+      ],
+      "./src/models/map.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/tslib/tslib.d.ts"
       ],
       "./src/models/nav-dev.model.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts",
@@ -3664,8 +3684,16 @@
       "./src/repositories/index.ts": [
         "./node_modules/tslib/tslib.d.ts",
         "./src/repositories/beacon.repository.ts",
+        "./src/repositories/map.repository.ts",
         "./src/repositories/nav-dev.repository.ts",
         "./src/repositories/position.repository.ts"
+      ],
+      "./src/repositories/map.repository.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./node_modules/tslib/tslib.d.ts",
+        "./src/datasources/index.ts",
+        "./src/models/index.ts"
       ],
       "./src/repositories/nav-dev.repository.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -5103,9 +5131,6 @@
         "./node_modules/@types/node/index.d.ts",
         "./node_modules/@types/node/stream.d.ts"
       ],
-      "./node_modules/@types/sinon/index.d.ts": [
-        "./node_modules/@types/sinon/node_modules/@sinonjs/fake-timers/types/fake-timers-src.d.ts"
-      ],
       "./node_modules/@types/superagent/index.d.ts": [
         "./node_modules/@types/cookiejar/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
@@ -5243,9 +5268,15 @@
         "./src/controllers/beacon.controller.ts",
         "./src/controllers/file-download.controller.ts",
         "./src/controllers/file-upload.controller.ts",
+        "./src/controllers/map.controller.ts",
         "./src/controllers/nav-dev-position.controller.ts",
         "./src/controllers/nav-dev.controller.ts",
         "./src/controllers/position.controller.ts"
+      ],
+      "./src/controllers/map.controller.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/models/index.ts",
+        "./src/repositories/index.ts"
       ],
       "./src/controllers/nav-dev-position.controller.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts",
@@ -5281,8 +5312,12 @@
       ],
       "./src/models/index.ts": [
         "./src/models/beacon.model.ts",
+        "./src/models/map.model.ts",
         "./src/models/nav-dev.model.ts",
         "./src/models/position.model.ts"
+      ],
+      "./src/models/map.model.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts"
       ],
       "./src/models/nav-dev.model.ts": [
         "./node_modules/@loopback/repository/dist/index.d.ts",
@@ -5298,8 +5333,14 @@
       ],
       "./src/repositories/index.ts": [
         "./src/repositories/beacon.repository.ts",
+        "./src/repositories/map.repository.ts",
         "./src/repositories/nav-dev.repository.ts",
         "./src/repositories/position.repository.ts"
+      ],
+      "./src/repositories/map.repository.ts": [
+        "./node_modules/@loopback/repository/dist/index.d.ts",
+        "./src/datasources/index.ts",
+        "./src/models/index.ts"
       ],
       "./src/repositories/nav-dev.repository.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -5623,7 +5664,6 @@
       "./node_modules/@types/serve-static/index.d.ts",
       "./node_modules/@types/shot/index.d.ts",
       "./node_modules/@types/sinon/index.d.ts",
-      "./node_modules/@types/sinon/node_modules/@sinonjs/fake-timers/types/fake-timers-src.d.ts",
       "./node_modules/@types/superagent/index.d.ts",
       "./node_modules/@types/supertest/index.d.ts",
       "./node_modules/@types/type-is/index.d.ts",
@@ -5702,6 +5742,7 @@
       "./src/controllers/file-download.controller.ts",
       "./src/controllers/file-upload.controller.ts",
       "./src/controllers/index.ts",
+      "./src/controllers/map.controller.ts",
       "./src/controllers/nav-dev-position.controller.ts",
       "./src/controllers/nav-dev.controller.ts",
       "./src/controllers/position.controller.ts",
@@ -5712,11 +5753,13 @@
       "./src/migrate.ts",
       "./src/models/beacon.model.ts",
       "./src/models/index.ts",
+      "./src/models/map.model.ts",
       "./src/models/nav-dev.model.ts",
       "./src/models/position.model.ts",
       "./src/openapi-spec.ts",
       "./src/repositories/beacon.repository.ts",
       "./src/repositories/index.ts",
+      "./src/repositories/map.repository.ts",
       "./src/repositories/nav-dev.repository.ts",
       "./src/repositories/position.repository.ts",
       "./src/sequence.ts",
