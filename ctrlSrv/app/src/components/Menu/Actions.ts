@@ -1,6 +1,7 @@
 export enum Actions {
 	CREATE = 'CREATE',
-	EDIT = 'EDIT'
+	EDIT = 'EDIT',
+	CONFIGURE = 'CONFIGURE'
 }
 
 export default Actions;

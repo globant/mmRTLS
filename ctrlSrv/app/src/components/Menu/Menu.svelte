@@ -7,7 +7,10 @@
 
 	let open = false;
 
-	export const items = [{ value: MenuActions.CREATE, text: 'Create a beacon' }];
+	export const items = [
+		{ value: MenuActions.CREATE, text: 'Create a beacon' },
+		{ value: MenuActions.CONFIGURE, text: 'Change map config' }
+	];
 
 	interface Events {
 		choose: MenuActions;

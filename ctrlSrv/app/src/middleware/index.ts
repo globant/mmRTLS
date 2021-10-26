@@ -1,5 +1,7 @@
-import { mapBackgroundImage, mapMaxPosition } from "$src/store/map-background-image.store";
+import { mapConfigStore } from "$src/store/map-background-image.store";
+import { MapConfigService } from "$src/streams/map-config/map-config.service";
 import type { LoadInput, LoadOutput } from "@sveltejs/kit";
+import { catchError, firstValueFrom, of, switchMap, timeout } from "rxjs";
 import getContext from "./context";
 
 export type Middleware = (input: LoadInput) => Promise<LoadOutput>;
@@ -27,14 +29,23 @@ const middlewares = new Map<string, Middleware>();
 middlewares.set("/", input => {
   const { success, redirect } = getContext(input);
 
-  const mapSize = mapMaxPosition.getValue();
-  const backgroundImage = mapBackgroundImage.getValue();
-
-  if (!mapSize || !backgroundImage) {
-    return redirect('/upload-map')
-  }
-
-  return success()
+  return firstValueFrom(mapConfigStore.pipe(
+    switchMap(config => {
+      if (config) {
+        return of(config);
+      }
+      return MapConfigService.get();
+    }),
+    timeout(1000),
+    catchError(() => of(null)),
+    switchMap(config => {
+      if (config) {
+        mapConfigStore.next(config);
+        return success();
+      }
+      return redirect('/upload-map');
+    }),
+  ));
 });
 
 

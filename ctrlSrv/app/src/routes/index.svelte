@@ -7,20 +7,38 @@
 	import NavDeviceDetails from '../views/NavDeviceDetails/NavDeviceDetails.svelte';
 	import BeaconSave from '../views/BeaconSave/BeaconSave.svelte';
 	import { MarkersController } from '../streams/markers/markers.controller';
-	import type { IIndoorPosition } from '$src/interfaces/position.interface';
 	import { createMenuActionsStream, menuActions } from '$src/components/Menu/menu.stream';
 	import { MarkerType } from '$src/streams/markers/types';
 	import type { Marker as IMarker } from '$src/streams/markers/types';
 	import { BeaconController } from '$src/streams/beacons/beacons.controller';
 	import { useMarkers } from '$src/streams/markers/use-markers';
-	import { mapBackgroundImage, mapMaxPosition } from "$src/store/map-background-image.store";
+	import { mapConfigStore } from "$src/store/map-background-image.store";
+	import { filter, map, pipe, pluck, withLatestFrom } from 'rxjs';
+	import type { MapConfig } from '$src/interfaces/map-config.interface';
+	import { goto } from '$app/navigation';
 
-	const mapSize = mapMaxPosition.getValue() as IIndoorPosition;
-	const backgroundImage = mapBackgroundImage.getValue();
+	const existingConfig = mapConfigStore.pipe(
+		filter((config): config is MapConfig => !!config)
+	)
+
+	const mapBackground = existingConfig.pipe(
+		pluck('imageUrl'),
+	);
+
+	const mapSize = existingConfig.pipe(
+		map(({sizeX, sizeY}) => ({x: sizeX, y: sizeY}))
+	);
 
 	useMarkers();
 
-	const markers$ = MarkersController.get();
+	const markers$ = MarkersController.get().pipe(
+		withLatestFrom(existingConfig),
+		map(([markers, {posX, posY}]) => markers.map(marker => ({
+			...marker,
+			x: marker.x + posX,
+			y: marker.y + posY
+		})))
+	);
 
 	const currentModifiedBeacon$ = BeaconController.getObservable();
 
@@ -33,12 +51,16 @@
 
 	const isSaveBeaconExperience$ = createMenuActionsStream([Actions.CREATE, Actions.EDIT]);
 	const onChange = (e: CustomEvent<Actions>) => {
-		menuActions.next(e.detail);
+		if (e.detail === Actions.CONFIGURE) {
+			goto('/upload-map');
+		} else {
+			menuActions.next(e.detail);
+		}
 	};
 </script>
 
 <div class="container">
-	<Map {backgroundImage} {mapSize} editMode={false}>
+	<Map backgroundImage={$mapBackground} mapSize={$mapSize} editMode={false}>
 		<Menu on:choose={onChange} />
 		{#if $isSaveBeaconExperience$} <BeaconSave /> {/if}
 		{#each $markers$ as { x, y, id, icon, data, type } (id)}
