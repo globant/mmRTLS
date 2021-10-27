@@ -26,13 +26,6 @@ services:
     networks:
       - backend
 
-  adminer:
-    container_name: adminer
-    image: adminer
-    restart: unless-stopped
-    ports:
-      - 9080:8080
-
   mmrtls-rest:
     build: ../rest
     image: mmrtls-ctrlsrv-rest
@@ -53,5 +46,21 @@ services:
   #   networks:
   #     - backend
 
+  mmrtls-processor:
+    build: ../processor
+    image: mmrtls-ctrlsrv-processor
+    depends_on:
+      - mariadb
+      - mosquitto
+    networks:
+      - backend
+
+  adminer:
+    container_name: adminer
+    image: adminer
+    restart: unless-stopped
+    ports:
+      - 9080:8080
+
 networks:
-  backend:
+    backend:
