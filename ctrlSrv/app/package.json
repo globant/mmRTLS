@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"prepare": "",
-		"dev": "svelte-kit dev --port 8000",
+		"start": "svelte-kit dev --port 8000",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",

@@ -7,21 +7,29 @@ const BASE_URL = 'http://localhost:3000/';
 const MAP_CONFIG_URL = 'map/';
 
 export class MapConfigService {
-    private static url = BASE_URL + MAP_CONFIG_URL;
+	private static url = BASE_URL + MAP_CONFIG_URL;
 
-    static get(): Observable<MapConfig | null> {
-        return createRequest<MapConfig | null>({
-            endpoint: this.url,
-            getDefault: () => of(null),
-            getId: () => ''
-        }, 'GET' as 'POST', undefined as any);
-    }
+	static get(): Observable<MapConfig | null> {
+		return createRequest<MapConfig | null>(
+			{
+				endpoint: this.url,
+				getDefault: () => of(null),
+				getId: () => ''
+			},
+			'GET' as 'POST',
+			undefined as any
+		);
+	}
 
-    static save(config: MapConfig): Observable<MapConfig | null> {
-        return createRequest<MapConfig | null>({
-            endpoint: this.url,
-            getDefault: () => of(null),
-            getId: () => ''
-        }, 'POST', config);
-    }
+	static save(config: MapConfig): Observable<MapConfig | null> {
+		return createRequest<MapConfig | null>(
+			{
+				endpoint: this.url,
+				getDefault: () => of(null),
+				getId: () => ''
+			},
+			'POST',
+			config
+		);
+	}
 }

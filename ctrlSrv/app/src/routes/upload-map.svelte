@@ -2,7 +2,18 @@
 	import { goto } from '$app/navigation';
 	import TextField from 'smelte/src/components/TextField';
 
-	import { audit, catchError, filter, NEVER, of, startWith, Subject, switchMap, takeUntil, tap } from 'rxjs';
+	import {
+		audit,
+		catchError,
+		filter,
+		NEVER,
+		of,
+		startWith,
+		Subject,
+		switchMap,
+		takeUntil,
+		tap
+	} from 'rxjs';
 	import type { Observable } from 'rxjs';
 
 	import Map from '../components/Map/Map.svelte';
@@ -69,27 +80,31 @@
 	};
 
 	const saveImageFlow = (file: Observable<File>) => {
-		file.pipe(
-			takeUntil(unsubscribe),
-			audit(() => saveMapSubject),
-			switchMap(newFile => FileUploadService.save(newFile)),
-			filter((url): url is string => !!url),
-			switchMap(url => MapConfigService.save({
-				id: 1,
-				imageUrl: url,
-				sizeX: +xDimension!,
-				sizeY: +yDimension!,
-				posX: +centerX,
-				posY: +centerY
-			})),
-			catchError(() => of(null))
-		).subscribe(mapConfig => {
-			if (mapConfig) {
-				mapConfigStore.next(mapConfig);
-				goto(MAP_ROUTE);
-			}
-		});
-	}
+		file
+			.pipe(
+				takeUntil(unsubscribe),
+				audit(() => saveMapSubject),
+				switchMap((newFile) => FileUploadService.save(newFile)),
+				filter((url): url is string => !!url),
+				switchMap((url) =>
+					MapConfigService.save({
+						id: 1,
+						imageUrl: url,
+						sizeX: +xDimension!,
+						sizeY: +yDimension!,
+						posX: +centerX,
+						posY: +centerY
+					})
+				),
+				catchError(() => of(null))
+			)
+			.subscribe((mapConfig) => {
+				if (mapConfig) {
+					mapConfigStore.next(mapConfig);
+					goto(MAP_ROUTE);
+				}
+			});
+	};
 
 	const updateInternalPositions = ({ x, y }: IIndoorPosition) => {
 		xDimension = x.toString();
@@ -126,7 +141,7 @@
 		<Map backgroundImage={$imageUrl} {mapSize} on:boundsUpdate={handleMapUpdate}>
 			<Marker x={+point1X + +centerX} y={+point1Y + +centerY} id="1" icon={BEACON_ICON_URL} />
 			<Marker x={+point2X + +centerX} y={+point2Y + +centerY} id="2" icon={BEACON_ICON_URL} />
-			<Marker x={+centerX} y={+centerY} id="3"/>
+			<Marker x={+centerX} y={+centerY} id="3" />
 		</Map>
 	</div>
 	<section class="controls-group vertical-container">
@@ -150,7 +165,12 @@
 			<TextField label="Center Y Coordinate (Meters)" bind:value={centerY} />
 		</div>
 	</section>
-	<Button variant="raised" on:click={saveMap} disabled={!(xDimension && yDimension && anImageHasBeenUploaded && centerY && centerX)}>Save</Button>
+	<Button
+		variant="raised"
+		on:click={saveMap}
+		disabled={!(xDimension && yDimension && anImageHasBeenUploaded && centerY && centerX)}
+		>Save</Button
+	>
 	<style>
 		.controls > * {
 			margin: 0.5em;

@@ -36,15 +36,14 @@ services:
     networks:
       - backend
   
-  # mmrtls-app:
-  #   build: ../app
-  #   image: mmrtls-ctrlsrv-app
-  #   ports:
-  #     - "8000:8000"
-  #   depends_on:
-  #     - mmrtls-rest
-  #   networks:
-  #     - backend
+  mmrtls-app:
+    build: ../app
+    image: mmrtls-ctrlsrv-app
+    ports:
+      - 8000:8000
+    networks:
+      - backend
+    command: npm start
 
   mmrtls-processor:
     build: ../processor

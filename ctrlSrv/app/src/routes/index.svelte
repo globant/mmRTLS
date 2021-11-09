@@ -12,32 +12,28 @@
 	import type { Marker as IMarker } from '$src/streams/markers/types';
 	import { BeaconController } from '$src/streams/beacons/beacons.controller';
 	import { useMarkers } from '$src/streams/markers/use-markers';
-	import { mapConfigStore } from "$src/store/map-background-image.store";
+	import { mapConfigStore } from '$src/store/map-background-image.store';
 	import { filter, map, pipe, pluck, withLatestFrom } from 'rxjs';
 	import type { MapConfig } from '$src/interfaces/map-config.interface';
 	import { goto } from '$app/navigation';
 
-	const existingConfig = mapConfigStore.pipe(
-		filter((config): config is MapConfig => !!config)
-	)
+	const existingConfig = mapConfigStore.pipe(filter((config): config is MapConfig => !!config));
 
-	const mapBackground = existingConfig.pipe(
-		pluck('imageUrl'),
-	);
+	const mapBackground = existingConfig.pipe(pluck('imageUrl'));
 
-	const mapSize = existingConfig.pipe(
-		map(({sizeX, sizeY}) => ({x: sizeX, y: sizeY}))
-	);
+	const mapSize = existingConfig.pipe(map(({ sizeX, sizeY }) => ({ x: sizeX, y: sizeY })));
 
 	useMarkers();
 
 	const markers$ = MarkersController.get().pipe(
 		withLatestFrom(existingConfig),
-		map(([markers, {posX, posY}]) => markers.map(marker => ({
-			...marker,
-			x: marker.x + posX,
-			y: marker.y + posY
-		})))
+		map(([markers, { posX, posY }]) =>
+			markers.map((marker) => ({
+				...marker,
+				x: marker.x + posX,
+				y: marker.y + posY
+			}))
+		)
 	);
 
 	const currentModifiedBeacon$ = BeaconController.getObservable();
@@ -70,9 +66,7 @@
 				{id}
 				{icon}
 				on:click={onMarkerClick}
-				disabled={
-					$currentModifiedBeacon$?.beaconId === data.id && type === MarkerType.BEACON
-				}
+				disabled={$currentModifiedBeacon$?.beaconId === data.id && type === MarkerType.BEACON}
 			/>
 		{/each}
 	</Map>

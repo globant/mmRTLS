@@ -33,7 +33,9 @@
 		y: NaN
 	};
 
-	$: { if (map) updateMapBounds(mapSize); }
+	$: {
+		if (map) updateMapBounds(mapSize);
+	}
 
 	const updateMapBounds = (newBounds: IIndoorPosition) => {
 		map?.setBounds(newBounds);

@@ -5,10 +5,9 @@
 	import 'leaflet/dist/leaflet.css';
 	import '../app.css';
 
-	export async function  load (input: LoadInput) {
-		return await checkMiddlewares(input)
+	export async function load(input: LoadInput) {
+		return await checkMiddlewares(input);
 	}
-
 </script>
 
 <slot />
