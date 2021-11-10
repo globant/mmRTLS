@@ -1,4 +1,23 @@
 # rtls-control-server
+This is the REST API to manage the models related to the mmRTLS project, it handles 7 different controllers:
+
+- Beacon Controller: in charge of managing the beacon position, transmission power and its mac address
+- File Upload/Download Controller: in charge of managing binary artifacts such as the map image
+- Map Controller: in charge of managing the map image, position and size
+- NavDev Controller: in charge of the navigation device information
+- NavDevPositionController / Position Controller: In charge of the navigation device positions
+
+## First use:
+
+After following the install procedure, it's required to initialize or migrate a database, for such is required to execute the following command.
+
+Local execution mode
+``` yarn migrate ```
+
+dockerized execution mode
+```  docker exec -it docker_mmrtls-rest_1 yarn migrate ```
+
+Where docker_mmrtls-rest_1 is the name of your docker rest container
 
 This application is generated using [LoopBack 4 CLI](https://loopback.io/doc/en/lb4/Command-line-interface.html) with the
 [initial project layout](https://loopback.io/doc/en/lb4/Loopback-application-layout.html).
