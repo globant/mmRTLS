@@ -19,6 +19,13 @@ const config = {
 		target: '#svelte',
 		ssr: false,
 		vite: {
+			server: {
+				hmr: {
+					host: 'localhost',
+					port: 15000,
+					protocol: 'ws'
+				}
+			},
 			resolve: {
 				alias: {
 					$src: resolve('./src')

@@ -5,7 +5,7 @@ const config = {
   name: 'db',
   connector: 'mysql',
   url: '',
-  host: '127.0.0.1', //If there are connection issues with docker components, set the specific host ip
+  host: '0.0.0.0', //If there are connection issues with docker components, set the specific host ip
   port: 3306,
   user: 'globcol',
   password: 'RMVnTbQ7wF',

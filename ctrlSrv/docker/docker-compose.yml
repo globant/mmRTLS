@@ -41,6 +41,7 @@ services:
     image: mmrtls-ctrlsrv-app
     ports:
       - 8000:8000
+      - 15000:15000
     networks:
       - backend
     command: npm start
